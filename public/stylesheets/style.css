@@ -1,0 +1,54 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+
+#page1{
+  /* align-items: center; */
+  min-height: 100vh;
+  width: 100%;
+  background-color: darkcyan;
+  
+  align-items: center;
+  justify-content: center; 
+}
+#page1{
+background-image: url(https://www.vmtlib.michlibrary.org/library-books.jpg/@@images/image.jpeg);
+/* background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/HD-Library-Wallpaper-768x432.jpg); */
+background-size: cover;
+}
+
+nav{
+padding: 0px 30px;
+height: 60px;
+width: 100%;
+/* background-color:lightsalmon ; */
+background-color: black;
+
+display: flex;
+align-items: center;
+justify-content: left;
+}
+
+nav a{
+  font-size: 18px;
+  margin-right: 50px;
+  color: white;
+  text-decoration: none;
+}
+nav a:nth-child(1){
+  text-decoration: underline;
+  color: red;
+}
+h2{ 
+padding: 150px;
+font-size: 50px;
+text-align: center;
+color: rgba(255, 255, 255, 0.735);
+}

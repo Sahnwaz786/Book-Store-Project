@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/show.css">
+    <title>Document</title>
+</head>
+<body>
+  
+<div id="page1">
+    <nav>
+        <a href="/">Home</a>
+        &nbsp;&nbsp;
+        <a href="/register">Register book</a>
+        &nbsp;&nbsp;
+        <a href="/show">Show Book</a>
+        &nbsp;&nbsp;
+        <a href="about">About</a>
+    </nav>
+    <div id="content">
+        <% books.forEach(function(e){ %>
+            <h2>Book name -: <%= e.Name %></h2>
+            
+            <h2>Auther Name -: <%= e.Auther%></h2>
+
+            <h2>Image -: <img src="<%= e.Image %>" alt=""></h2>
+           
+            <h2>Description -: <%= e.Description %></h2>
+           
+            <a href="/details/<%= e._id %>">Explore more</a>
+           <hr>
+          
+       <% }) %>
+    </div>
+</div>
+   
+
+  
+
+    
+</body>
+</html>
